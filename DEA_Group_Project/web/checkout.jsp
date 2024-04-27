@@ -1,6 +1,6 @@
- <%-- 
+<%-- 
     Document   : checkout
-    Created on : Apr 25, 2024, 1:33:56 PM
+    Created on : Apr 27, 2024, 12:53:07 PM
     Author     : iresh
 --%>
 
@@ -12,8 +12,9 @@
         <meta name="view port" content="width=device width.initial-scale=1.0">
         <link rel="Stylesheet" href="css/style.css">
         <title>Payment</title>
-    </head>
-    <body>
+        
+        
+        <body>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -28,6 +29,11 @@
                   </div>
                   <div class="inputBox">
                       <span> Address :</span>
+                      <input type="text" placeholder="room-street-locality">
+                 </div>
+                  
+                  <div class="inputBox"></div>
+                    <span> Address :</span>
                       <input type="text" placeholder="room-street-locality">
                  </div>
                   
@@ -78,10 +84,9 @@
                   </div>
                 
                   
-                  <input type="Submit" value="Proceed to checkout" class="Submit-btn">
-                  
-                
+                  <input type="Submit" value="Proceed to checkout">
                   
                   
+    </head>
     </body>
 </html>

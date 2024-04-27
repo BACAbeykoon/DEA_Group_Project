@@ -10,15 +10,22 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="view port" content="width=device width.initial-scale=1.0">
-        <link rel="Stylesheet" href="css/style.css">
+        <link rel="Stylesheet" href="checkout.css">
         <title>Payment</title>
         
-        
+    </head>   
         <body>
+            
         <div class="container">
+            
+            <form action="">
+                
             <div class="row">
+                
                 <div class="col">
+                    
                   <h3 class="title">Billing address</h3>
+                  
                   <div class="inputBox">
                       <span>Full name :</span>
                       <input type="text" placeholder="Mr. D Silva">
@@ -31,17 +38,14 @@
                       <span> Address :</span>
                       <input type="text" placeholder="room-street-locality">
                  </div>
-                  
-                  <div class="inputBox"></div>
-                    <span> Address :</span>
-                      <input type="text" placeholder="room-street-locality">
-                 </div>
+                 
                   
                   <div class="inputBox">
                       <span>City:</span>
                       <input type="text" placeholder="Kandy">
                   </div>
                   
+                  <div class="flex">
                     <div class="inputBox">
                        <span>State :</span>
                        <input type="text" placeholder="Sri Lanka">
@@ -57,7 +61,7 @@
                   <h3 class="title">Payment</h3>
                   <div class="inputBox">
                       <span>Cards accepted :</span>
-                      <img src="Payment Capture.JPG" alt="">
+                      <img src="a.jpg" alt="">
                   </div>
                   <div class="inputBox">
                       <span> Name on card :</span>
@@ -81,10 +85,15 @@
                    <div class="inputBox">
                        <span>CVV :</span>
                        <input type="text" placeholder=" 123">
+                       
+                       </div>
                   </div>
+                </div>
                 
                   
-                  <input type="Submit" value="Proceed to checkout">
+                  <input type="Submit" value="Proceed to checkout" class="submit-btn">
+                  
+                  </form>
                   
                   
     </head>

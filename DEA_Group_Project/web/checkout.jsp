@@ -9,16 +9,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-compatible " content="IE-edge">
         <meta name="view port" content="width=device width.initial-scale=1.0">
+        
+        
         <link rel="Stylesheet" href="checkout.css">
-        <title>Payment</title>
         
     </head>   
         <body>
             
         <div class="container">
             
-            <form action="">
+            <form action="checkout">
                 
             <div class="row">
                 
@@ -60,8 +62,9 @@
                    <div class="col">
                   <h3 class="title">Payment</h3>
                   <div class="inputBox">
+                      
                       <span>Cards accepted :</span>
-                      <img src="a.jpg" alt="">
+                      <img src="http://localhost:8080/DEA_Group_Project/a.jpg">
                   </div>
                   <div class="inputBox">
                       <span> Name on card :</span>
@@ -77,7 +80,7 @@
                       <input type="text" placeholder="April">
                   </div>
                   
-                    <div class="inputBox">
+                    <div class="flex">
                        <span> Exp year :</span>
                        <input type="number" placeholder="2028">
                   </div>
@@ -89,7 +92,7 @@
                        </div>
                   </div>
                 </div>
-                
+                </div>
                   
                   <input type="Submit" value="Proceed to checkout" class="submit-btn">
                   
@@ -97,5 +100,6 @@
                   
                   
     </head>
+   
     </body>
 </html>

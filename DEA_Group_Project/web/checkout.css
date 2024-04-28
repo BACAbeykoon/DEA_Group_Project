@@ -1,15 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Apr 27, 2024, 1:16:12 PM
-    Author     : iresh
-*/
-
-/* General Styles */
-@import url('https://fonts.googleapls.com/css2/?family=Poppins:weight@100;300;400;500;600&display=swap');
+ @import url('https://fonts.googleapls.com/css2/?family=Poppins:weight@100;300;400;500;600&display=swap');
 
 .{
   font-family:'poppins',sans-serif;
@@ -28,7 +17,7 @@ and open the template in the editor.
     align-items:center;
     padding:25px;
     min-height:100vh;
-    background:linear-gradient(90deg,#2ecc71 60%,#27ae60 4.1%);
+    background:linear-gradient(90deg,#2ecc71 60%,#27ae60 40.1%);
     padding-bottom:70px;
     
 }
@@ -47,8 +36,9 @@ and open the template in the editor.
 }
 
 .container form.row.col{
-    flex:1 1 25px;
+    flex:1 1 250px;
 }
+
 
 .container form.row.col.title{
     font-size:20px;
@@ -109,4 +99,4 @@ and open the template in the editor.
    
     .container form.submit-btn:hover{
         background:#2ecc71;
-    }
+    }   

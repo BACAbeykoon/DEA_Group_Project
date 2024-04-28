@@ -1,44 +1,40 @@
 <%-- 
     Document   : Cart
-    Created on : Apr 25, 2024, 1:27:22 PM
+Created on : Apr 25, 2024, 1:27:22 PM
     Author     : Ishara Muthumini
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
 </head>
-<body class="">
-    
-    <div class="container">
-        <header>
-            <h1>Food Delivery Services</h1>
-            <div class="shopping">
-                <img src="image/shopping.svg">
-                <span class="quantity">0</span>
-            </div>
-        </header>
-
-        <div class="list">
-          
-        </div>
+<body>
+    <h1>Shopping Cart</h1>
+    <div class="banner">
+        <img src="your-image.jpg" alt="Food Delivery Template">
     </div>
-    <div class="card">
-        <h1>Card</h1>
-        <ul class="listCard">
+    <div class="search-bar">
+        <input type="text" placeholder="Search for items">
+    </div>
+    <div class="cart-items">
+        <h2>Items</h2>
+        <ul>
+            <li>
+                Vegetable Salad - $15.69
+            </li>
+            <li>
+                Sliced Pineapple - $9.69
+            </li>
+            <li>
+                Egg Bowl - $18.50
+            </li>
+            <li>
+                Cooked Seafoods - $20.50
+            </li>
         </ul>
-        <div class="checkOut">
-            <div class="total">0</div>
-            <div class="closeShopping">Close</div>
-        </div>
     </div>
-
-    <script src="app.js"></script>
 </body>
 </html>

@@ -10,21 +10,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Checkout</title>
     <link rel ="stylesheet" href ="summery.css">
 </head>
 <body>
-    <h1>Checkout</h1>
-    
-    <h2>Order Summary</h2>
-    <div class="card">
-    <table border="1">
-        <tr>
+  <div class="card">
+         <h2 style="color:red;">Order Summary</h2>
+    <table border="0">
+        <div class="summer"><tr>
             <th>ID</th>
             <th>Name</th>
             <th>Description</th>
             <th>Price</th>
         </tr>
+        </div>
         <c:forEach var="product" items="${selectedProducts}">
             <tr>
                 <td>${product.id}</td>
@@ -35,11 +33,12 @@
         </c:forEach>
     </table>
     
-    <h2>Order Total</h2>
+            <div class="order"> 
     <p>Subtotal: $<%= request.getAttribute("subtotal") %></p>
     <p>Tax: $<%= request.getAttribute("tax") %></p>
     <p>Shipping Cost: $<%= request.getAttribute("shippingCost") %></p>
-    <p>Total: $<%= request.getAttribute("totalAmount") %></p>
+    <p style="font-size: 17px;ss">Total: $<%= request.getAttribute("totalAmount") %></p>
+            </div>
     
    
         <button type="submit">Place Order</button>

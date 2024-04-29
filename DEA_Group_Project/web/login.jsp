@@ -15,16 +15,18 @@
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <img src="https://eskilly.com/wp-content/uploads/2023/07/6300959.jpg" alt="Sign up image">
+                        
                     </div>
                     <div class="signin-form">
                         <h2>Login</h2>
-                        <form method="POST" action="login.php" id="login-form"><br><br>
+                        <form method="POST" action="" ><br><br>
+                            
                             <div class="form-group">
-                                <input type="text" name="username" id="username" placeholder="Username" required>
+                                <input type="text" name="username" placeholder="Username" required>
                             </div>
+                            
                             <div class="form-group">
-                                <input type="password" name="password" id="password" placeholder="Password" required>
+                                <input type="password" name="password"  placeholder="Password" required>
                             </div>
                             
                             
@@ -40,9 +42,6 @@
                 </div>
             </div>
         </section>
-    </div>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    </div>  
 </body>
-
 </html>

@@ -6,17 +6,19 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Checkout</title>
+    <link rel ="stylesheet" href ="summery.css">
 </head>
 <body>
     <h1>Checkout</h1>
     
     <h2>Order Summary</h2>
+    <div class="card">
     <table border="1">
         <tr>
             <th>ID</th>
@@ -42,6 +44,7 @@
     
    
         <button type="submit">Place Order</button>
+    </div>
    
 </body>
 </html>

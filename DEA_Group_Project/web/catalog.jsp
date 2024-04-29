@@ -1,35 +1,455 @@
-<%-- 
-    Document   : catalog
-    Created on : Apr 28, 2024, 7:44:05 PM
-    Author     : MSI
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>catalog</title>
+        <title>TODO supply a title</title>
+        <style>
+body {background-color: powderblue;}
+h1   {color: darkslateblue;}
+
+</style>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="newcss.css">
+         
     </head>
-   <div class="container">
-            <div class="card-header my-3">All product</div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card w-100"style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="card image cop">
-                        <div class="card-body">
-                            <h5 class="card-title>">card title</h5>
-                            <h6 class="price">price: $20</h6>
-                            <h6 class="category">category</h6>
-                            <div class="mt-3 d-flex justify-connet-betweeen">
-                                <a href="#" class="btn">add to cart</a>
-                                 <a href="#" class="btn">buy now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <body>
+        
+       
+        <h1 >Main dish</h1>
+        
+        <!-- first line****** -->
+        
+        <div class="row">
+            <div class="column">
+       <div class="card">
+  <img src="imeges/Vegrice.jpg" alt="veg" style="width:100%">
+  <h2>veg rice</h2>
+  <p class="price">$2.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
             </div>
-        </div>    
+            <div class="column">
+           <div class="card">
+  <img src="imeges/chirice.png" alt="chiken" style="width:100%">
+  <h2>chiken rice</h2>
+  <p class="price">$3.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+                </div>
+            
+                <div class="column">
+       <div class="card">
+  <img src="imeges/beefrice.jpg" alt="beef" style="width:100%">
+  <h2>beef rice</h2>
+  <p class="price">$4.50</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+                       <div class="column">
+       <div class="card">
+  <img src="imeges/mix.jpg" alt="chees" style="width:100%">
+  <h2>mix rice</h2>
+  <p class="price">$4.89</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+        </div>
+        
+         <!-- 2 line****** -->
+        
+        <div class="row">
+            <div class="column">
+       <div class="card">
+  <img src="imeges/vegk.jpg" alt="veg" style="width:100%">
+  <h2>veg kottu</h2>
+  <p class="price">$2.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+            <div class="column">
+           <div class="card">
+  <img src="imeges/chik.jpg" alt="chiken" style="width:100%">
+  <h2>chiken kottu</h2>
+  <p class="price">$3.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+                </div>
+            
+                <div class="column">
+       <div class="card">
+  <img src="imeges/beek.jpg" alt="beef" style="width:100%">
+  <h2>beef kottu</h2>
+  <p class="price">$4.80</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+                       <div class="column">
+       <div class="card">
+  <img src="imeges/mixk.jpg" alt="chees" style="width:100%">
+  <h2>mix kottu</h2>
+  <p class="price">$5.00</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+        </div>
+         
+        <h1>Short eats</h1>
+        
+ <!-- 3 line****** -->
+        
+        <div class="row">
+            <div class="column">
+       <div class="card">
+  <img src="imeges/v.jpg" alt="veg" style="width:100%">
+  <h2>veg pizza</h2>
+  <p class="price">$1.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+            <div class="column">
+           <div class="card">
+  <img src="imeges/chi.jpeg" alt="chiken" style="width:100%">
+  <h2>chiken pizza</h2>
+  <p class="price">$2.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+                </div>
+            
+                <div class="column">
+       <div class="card">
+  <img src="imeges/beef.jpg" alt="beef" style="width:100%">
+  <h2>beef pizza</h2>
+  <p class="price">$3.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+                       <div class="column">
+       <div class="card">
+  <img src="imeges/chee.jpg" alt="chees" style="width:100%">
+  <h2>cheese pizza</h2>
+  <p class="price">$3.49</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+        </div>
+        
+
+        
+        <!-- 4 line******* -->
+        
+          <div class="row">
+            <div class="column">
+       <div class="card">
+  <img src="imeges/veb.jpg" alt="veg" style="width:100%">
+  <h2>veg burger</h2>
+  <p class="price">$1</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+            <div class="column">
+           <div class="card">
+  <img src="imeges/chib.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>chiken burger</h2>
+  <p class="price">$1.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+                </div>
+            
+                <div class="column">
+       <div class="card">
+  <img src="imeges/beeb.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>beef burger</h2>
+  <p class="price">$2.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+                       <div class="column">
+       <div class="card">
+  <img src="imeges/chib.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>cheese burger</h2>
+  <p class="price">$2.19</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+        </div>
+        
+        <!-- 5 line****** -->
+        
+          <div class="row">
+            <div class="column">
+       <div class="card">
+  <img src="imeges/suvveg.jpg" alt="veg sub" style="width:100%">
+  <h2>veg submarine</h2>
+  <p class="price">$1.59</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+            <div class="column">
+           <div class="card">
+  <img src="imeges/subchi.jpg" alt="chi sub" style="width:100%">
+  <h2>chiken submarine</h2>
+  <p class="price">$2.19</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+                </div>
+            
+                <div class="column">
+       <div class="card">
+  <img src="imeges/subee.jpeg" alt="beef sub" style="width:100%">
+  <h2>beef submarine</h2>
+  <p class="price">$3.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+                       <div class="column">
+       <div class="card">
+  <img src="imeges/subche.jpg" alt="chee" style="width:100%">
+  <h2>cheese submarine</h2>
+  <p class="price">$2.59</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+        </div>
+        
+        <!-- 6 line******* -->
+        
+          <div class="row">
+            <div class="column">
+       <div class="card">
+  <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>Tailored Jeans</h2>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+            <div class="column">
+           <div class="card">
+  <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>Tailored Jeans</h2>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+                </div>
+            
+                <div class="column">
+       <div class="card">
+  <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>Tailored Jeans</h2>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+                       <div class="column">
+       <div class="card">
+  <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>Tailored Jeans</h2>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+        </div>
+        
+          <!-- 7 line******* -->
+          
+          <div class="row">
+            <div class="column">
+       <div class="card">
+  <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>Tailored Jeans</h2>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+            <div class="column">
+           <div class="card">
+  <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>Tailored Jeans</h2>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+                </div>
+            
+                <div class="column">
+       <div class="card">
+  <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>Tailored Jeans</h2>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+                       <div class="column">
+       <div class="card">
+  <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>Tailored Jeans</h2>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+        </div>
+          
+          
+        <h1>Drinks</h1>
+        
+          
+        <!-- 8 line******* -->
+        
+          <div class="row">
+            <div class="column">
+       <div class="card">
+  <img src="imeges/1.jpg" alt="kok" style="width:100%">
+  <h2>coca cola</h2>
+  <p class="price">$1.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+            <div class="column">
+           <div class="card">
+  <img src="imeges/2.jpeg" alt="crem" style="width:100%">
+  <h2>cream soda</h2>
+  <p class="price">$1.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+                </div>
+            
+                <div class="column">
+       <div class="card">
+  <img src="imeges/3.jpg" alt="sprit" style="width:100%">
+  <h2>sprite</h2>
+  <p class="price">$1.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+                       <div class="column">
+       <div class="card">
+  <img src="imeges/4.jpg" alt="fanta" style="width:100%">
+  <h2>fanta</h2>
+  <p class="price">$1.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+        </div>
+        
+          <!-- 9 line******* -->
+          
+          <div class="row">
+            <div class="column">
+       <div class="card">
+  <img src="imeges/6.jpeg" alt="Denim Jeans" style="width:100%">
+  <h2>EGB</h2>
+  <p class="price">$1.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+            <div class="column">
+           <div class="card">
+  <img src="imeges/7.png" alt="Denim Jeans" style="width:100%">
+  <h2>7 up</h2>
+  <p class="price">$1.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+                </div>
+            
+                <div class="column">
+       <div class="card">
+  <img src="imeges/8.png" alt="Denim Jeans" style="width:100%">
+  <h2>mountain dew</h2>
+  <p class="price">$1.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+                       <div class="column">
+       <div class="card">
+  <img src="imeges/9.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>smak</h2>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+        </div>
+          
+        <!-- 10 line******* -->
+        
+          <div class="row">
+            <div class="column">
+       <div class="card">
+  <img src="imeges/10.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>mylo</h2>
+  <p class="price">$0.99</p>
+  <p>mylo</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+            <div class="column">
+           <div class="card">
+  <img src="imeges/11.png" alt="Denim Jeans" style="width:100%">
+  <h2>nescafe</h2>
+  <p class="price">$0.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+                </div>
+            
+                <div class="column">
+       <div class="card">
+  <img src="imeges/12.png" alt="Denim Jeans" style="width:100%">
+  <h2>kalkiri</h2>
+  <p class="price">$1.00</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+                       <div class="column">
+       <div class="card">
+  <img src="imeges/13.jpg" alt="Denim Jeans" style="width:100%">
+  <h2>kothmale milk</h2>
+  <p class="price">$0.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div>
+            </div>
+        </div>
+        
       
     </body>
 </html>

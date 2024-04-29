@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="view port" content="width=device width.initial-scale=1.0">
-        <link rel="Stylesheet" href="css/style.css">
+        <link rel="Stylesheet" href="cheoutcss.css">
         <title>Payment</title>
         
         

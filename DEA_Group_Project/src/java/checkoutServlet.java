@@ -1,8 +1,9 @@
-
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,15 +12,21 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author iresh
  */
-@WebServlet(urlPatterns = {"/checkoutServlet"})
-public class checkoutServlet extends HttpServlet {
 
+public class checkoutServlet extends HttpServlet {
     
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    public class CheckoutServlet extends HttpServlet {
+    // JDBC URL, username, and password
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/your_database_name";
+    private static final String JDBC_USER = "your_username";
+    private static final String JDBC_PASSWORD = "your_password";
+
+    @Override
+        protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-         
+        
+            
+        // Retrieve form data    
         String fullName = request.getParameter("fullname");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
@@ -31,48 +38,68 @@ public class checkoutServlet extends HttpServlet {
         String expMonth = request.getParameter("expmonth");
         int expYear = Integer.parseInt(request.getParameter("expyear"));
         String cvv = request.getParameter("cvv");
-            
         
-        response.sendRedirect(checkout.jsp);
+        
+        // JDBC variables
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+   
+            
+          try {
+            // Register JDBC driver
+            Class.forName("com.mysql.jdbc.Driver");
+
+            // Open a connection
+            conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
+   
+    
+       // SQL query to insert data into the database
+            String sql = "INSERT INTO checkout_details (full_name, email, address, city, state, zip_code, card_name, card_number, exp_month, exp_year, cvv) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, fullName);
+            pstmt.setString(2, email);
+            pstmt.setString(3, address);
+            pstmt.setString(4, city);
+            pstmt.setString(5, state);
+            pstmt.setString(6, zipCode);
+            pstmt.setString(7, cardName);
+            pstmt.setString(8, cardNumber);
+            pstmt.setString(9, expMonth);
+            pstmt.setString(10, expYear);
+            pstmt.setString(11, cvv);
+   
+     // Execute the query
+            pstmt.executeUpdate();
+
+            // Redirect to a thank you page or any other page
+
+            response.sendRedirect("checkout.jsp");
+        } catch (SQLException | ClassNotFoundException ex) {
+        } finally {
+            // Close JDBC objects
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (SQLException ex) {
+            }
         }
     }
-
+}
     
-   
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
-    }
-
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
-    }
-
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
+          
+ 
+  
+     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     @Override
     public String getServletInfo() {
         return "Short description";

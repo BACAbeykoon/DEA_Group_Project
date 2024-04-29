@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package javax.servlet.http;
 
 /**
  *
  * @author iresh
  */
-class checkout {
-
-    static String jsp;
+public class RequestDispatcher {
     
 }

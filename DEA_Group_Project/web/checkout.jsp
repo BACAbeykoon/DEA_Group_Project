@@ -4,7 +4,8 @@
     Author     : iresh
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="tex
+ </html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,7 +21,7 @@
             
         <div class="container">
             
-            <form action="checkout">
+            <form action="checkoutServlet"method="post">
                 
             <div class="row">
                 
@@ -36,6 +37,12 @@
                       <span> e-mail :</span>
                       <input type="email" placeholder="example@example.com">
                   </div>
+                  
+                  <div class="inputBox">
+                      <span> Confirm e-mail :</span>
+                      <input type="email" placeholder="example@example.com">
+                  </div>
+                  
                   <div class="inputBox">
                       <span> Address :</span>
                       <input type="text" placeholder="room-street-locality">
@@ -46,6 +53,7 @@
                       <span>City:</span>
                       <input type="text" placeholder="Kandy">
                   </div>
+                 
                   
                   <div class="flex">
                     <div class="inputBox">
@@ -60,11 +68,11 @@
                   
                   
                    <div class="col">
-                  <h3 class="title">Payment</h3>
+                  <h3 class="title">Payment Option</h3>
                   <div class="inputBox">
                       
                       <span>Cards accepted :</span>
-                      <img src="http://localhost:8080/DEA_Group_Project/a.jpg">
+                      <img src="image/a.jpg">
                   </div>
                   <div class="inputBox">
                       <span> Name on card :</span>
@@ -78,6 +86,7 @@
                   <div class="inputBox">
                       <span> Exp month :</span>
                       <input type="text" placeholder="April">
+                      
                   </div>
                   
                     <div class="flex">

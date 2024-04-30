@@ -6,56 +6,53 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-    <center>
-       <form action="Manage" method="post">
-
-            <table width="400px" border="1">
-                <tr>
-                   <td colspan="2"><center>
-                   <h1>Add New Products</h1>
-                  </center> </td>
-                </tr>
-
-                <tr>
-                    <td>Product ID</td>
-                    <td><input type="text" name="P_id" id="P_id"></td>
-                </tr>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amantha</title>
+    <link rel="stylesheet" href="LoginStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Form login-form">
+        <h2>Add New Products</h2>
+        <form action="Manage" method="post">
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <label for="#">Product ID</label>
+                <input type="text" name="P_id" id="P_id"> 
+            </div>
+            
+            <div class="input-box1">
+               
                 <tr>
                     <td>Categary</td>
                     <td><select name="categary" id="categary"><option>Food</option><option>Vegetable</option><option>Fruits</option></select></td>
                     
                 </tr>
-
-                <tr>
-                    <td>Description</td>
-                    <td><input type="text" name="dis" id="dis"></td>
-                </tr>
-                
-                 <tr>
-                    <td>Price</td>
-                    <td><input type="text" name="price" id="price"></td>
-                </tr>
-                
-
-                <tr>
-                    <td colspan="2"> <input type="submit" value="Submit"></td>
-
-                </tr>
-                
-
-            </table>
-
-
+            </div>
+            
+            
+            <div class="input-box">
+                <i class='bx bxs-envelope' ></i>
+                <label for="#">Description</label>
+                 <input type="text" name="dis" id="dis">
+              
+            </div>
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <label for="#">Price</label>
+                <input type="text" name="price" id="price"> 
+            </div>
+   
+            <button class="btn">Submit</button>
         </form>
-        
-        <p> <a href="viewproduct">View All Product List</a> </p> 
-    </center>    
-    </body>
+      
+        <p class="RegisteBtn RegiBtn"> <a href="viewproduct">View All Product List</a></p>
+    </div>
+  
+
+</body>
 </html>
+

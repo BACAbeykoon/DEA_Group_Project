@@ -1,4 +1,4 @@
-package UserAuthendication;
+package mypakage;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,13 +13,11 @@ import javax.servlet.http.HttpServletResponse;
 public class Registration extends HttpServlet {
 
     
-     
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
+        
     }
 
-   
 
 }

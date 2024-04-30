@@ -17,7 +17,7 @@ public class checkoutServlet extends HttpServlet {
     
     public class CheckoutServlet extends HttpServlet {
     // JDBC URL, username, and password
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/your_database_name";
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/mysql?zeroDataTimeBehaior=convertToNull[root on Default schema]";
     private static final String JDBC_USER = "your_username";
     private static final String JDBC_PASSWORD = "your_password";
 

@@ -7,12 +7,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : Nipu
 */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
   text-align: center;
   font-family: arial;
-   background-color:whitesss
+  background-color:white;
   
 }
 
@@ -24,7 +24,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 .card button {
   border: none;
   outline: 0;
-  padding: 12px;
+  padding: 14px;
   color: white;
   background-color: #000;
   text-align: center;
@@ -46,5 +46,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 }
 
 body {
-  background-color: lightblue;
+    background-color: lightblue;
+}
+.food {
+    text-align: center;
 }

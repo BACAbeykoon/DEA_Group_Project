@@ -72,7 +72,7 @@
                   <div class="inputBox">
                       
                       <span>Cards accepted :</span>
-                      <img src="image/a.jpg">
+                      <img src="a.jpg">
                   </div>
                   <br>
                   <div class="inputBox">
@@ -86,13 +86,13 @@
                  </div>
                   <br>
                   <div class="inputBox">
-                      <span> Exp month :</span>
+                      <span> Expiry month :</span>
                       <input type="text" placeholder="April">
                       
                   </div>
                   <br>
                     <div class="flex">
-                       <span> Exp year :</span>
+                       <span> Expiry year :</span>
                        <input type="number" placeholder="2028">
                   </div>
                   <br>

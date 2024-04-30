@@ -65,7 +65,7 @@ public class checkoutServlet extends HttpServlet {
             pstmt.setString(7, cardName);
             pstmt.setString(8, cardNumber);
             pstmt.setString(9, expMonth);
-            pstmt.setString(10, expYear);
+            pstmt.setInt(10, expYear);
             pstmt.setString(11, cvv);
    
      // Execute the query
@@ -81,7 +81,20 @@ public class checkoutServlet extends HttpServlet {
                 if (pstmt != null) pstmt.close();
                 if (conn != null) conn.close();
             } catch (SQLException ex) {
+            } finally {
+            // Close JDBC objects
+            try {
+                if (pstmt != null) pstmt.close();
+                if (conn != null) conn.close();
+            } catch (SQLException ex) {
             }
+        }
+    }
+        
+        }
+    }
+}
+
         
     
 

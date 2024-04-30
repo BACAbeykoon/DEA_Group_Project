@@ -29,7 +29,7 @@ h1   {color: darkslateblue;}
        <div class="card">
   <img src="imeges/Vegrice.jpg" alt="veg" style="width:100%">
   <h2>veg rice</h2>
-  <p class="price">$2.99</p>
+  <p class="price">$2.59</p>
   <p>Some text about the jeans..</p>
   <p><button>Add to Cart</button></p>
 </div>

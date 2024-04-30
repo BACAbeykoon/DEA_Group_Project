@@ -5,7 +5,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>TODO supply  title</title>
         <style>
 body {background-color: powderblue;}
 h1   {color: darkslateblue;}

@@ -27,45 +27,45 @@
                 
                 <div class="col">
                     
-                  <h3 class="title">Billing address</h3>
+                  <h3 class="title">Delivery Information</h3>
                   
                   <div class="inputBox">
                       <span>Full name :</span>
                       <input type="text" placeholder="Mr. D Silva">
                   </div>
+                  <br>
                   <div class="inputBox">
                       <span> e-mail :</span>
                       <input type="email" placeholder="example@example.com">
                   </div>
-                  
+                  <br>
                   <div class="inputBox">
                       <span> Confirm e-mail :</span>
                       <input type="email" placeholder="example@example.com">
                   </div>
-                  
+                  <br>
                   <div class="inputBox">
                       <span> Address :</span>
                       <input type="text" placeholder="room-street-locality">
                  </div>
-                 
-                  
+                  <br>
                   <div class="inputBox">
                       <span>City:</span>
                       <input type="text" placeholder="Kandy">
                   </div>
-                 
+                  <br>
                   
                   <div class="flex">
                     <div class="inputBox">
                        <span>State :</span>
                        <input type="text" placeholder="Sri Lanka">
                   </div>
-                  
+                      <br>
                    <div class="inputBox">
                        <span>Zip code:</span>
                        <input type="text" placeholder="20480">
                   </div>
-                  
+                      <br>
                   
                    <div class="col">
                   <h3 class="title">Payment Option</h3>
@@ -74,31 +74,33 @@
                       <span>Cards accepted :</span>
                       <img src="image/a.jpg">
                   </div>
+                  <br>
                   <div class="inputBox">
                       <span> Name on card :</span>
                       <input type="text" placeholder=" Mr.D Silva">
                   </div>
+                  <br>
                   <div class="inputBox">
                       <span> Credit card number :</span>
                       <input type="text" placeholder="0000 1111 2222 3333">
                  </div>
-                  
+                  <br>
                   <div class="inputBox">
                       <span> Exp month :</span>
                       <input type="text" placeholder="April">
                       
                   </div>
-                  
+                  <br>
                     <div class="flex">
                        <span> Exp year :</span>
                        <input type="number" placeholder="2028">
                   </div>
-                  
+                  <br>
                    <div class="inputBox">
                        <span>CVV :</span>
                        <input type="text" placeholder=" 123">
-                       
                        </div>
+                  <br>
                   </div>
                 </div>
                 </div>

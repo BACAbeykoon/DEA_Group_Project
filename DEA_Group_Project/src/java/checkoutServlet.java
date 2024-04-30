@@ -82,27 +82,11 @@ public class checkoutServlet extends HttpServlet {
                 if (conn != null) conn.close();
             } catch (SQLException ex) {
             }
-        }
-    }
-}
+        
+    
+
     
           
  
   
-     
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-
-}
+    

@@ -30,6 +30,8 @@ public class registration extends HttpServlet {
         String re_pass= request.getParameter("re_pass");
         String mobile = request.getParameter("mobile");
         
+        //data validation
+        
         RequestDispatcher dispatcher = null;
         Connection con = null;
         
@@ -63,6 +65,8 @@ public class registration extends HttpServlet {
             dispatcher = request.getRequestDispatcher("registration.jsp");
             dispatcher.forward(request,response);
          }
+          
+          //database connection
         try{
            Class.forName("com.mysql.cj.jdbc.Driver"); 
            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/authendication?useSSL=false","root"," ");

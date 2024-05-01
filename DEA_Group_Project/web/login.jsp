@@ -21,7 +21,7 @@
                     </div>
                     <div class="signin-form">
                         <h2>Login</h2>
-                        <form method="POST" action="" ><br><br>
+                        <form method="POST" action="Login" ><br><br>
                             
                             <div class="form-group">
                                 <input type="email" name="email"  placeholder="Your Email"  required>

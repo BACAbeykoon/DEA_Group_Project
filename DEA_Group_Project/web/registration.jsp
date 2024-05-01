@@ -18,6 +18,10 @@
     </head>
     <body>
         
+        <!-- create a hidden field -->
+        <input type="hidden" id="status" value="<%=request.getAttribute("status")%>">
+
+        
         <div class="main">
             <section class="signup">
                 <div class="container">
@@ -25,7 +29,7 @@
                         <div class="signup-form">
                             
                             <h2 class="form-title">Sign up</h2>
-                            <form action="RegistrationServlet " method="POST" >
+                            <form action="Registration" method="POST" >
                                 
                                 <div class="form-group">
                                    <label for="name"><i class= "zmdi zmdi-account material-icons-name"></i></label>
@@ -71,5 +75,19 @@
                         </div>
                     </div>
                 </section>
+               </div>
+        
+         <!-- js -->
+        
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="alert/dist/sweetalert.css">
+        
+        <script type="text/javascript">
+            var status = document.getElementById("status").value;
+            if (status == "success"){
+                swal("Congratulations","Account Created Successfully","success");
+            }
+        </script>
+        
             </body>
             </html>

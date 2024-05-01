@@ -1,6 +1,7 @@
 package Project;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,12 +10,14 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 
-
+@MultipartConfig
 @WebServlet("/Manage")
 
 public class Manage extends HttpServlet {
@@ -37,13 +40,22 @@ public class Manage extends HttpServlet {
             String categary = req.getParameter("categary");
             String dis= req.getParameter("dis");
             String price= req.getParameter("price");
+            Part ImagePart = req.getPart("image");
+            InputStream image= null;
+            
+            if (ImagePart != null) {
+            image = ImagePart.getInputStream();
+        }
+
             
             
-            pst = con.prepareStatement("insert into product(id,categary,discription,price)values(?,?,?,?) ");
+            
+            pst = con.prepareStatement("insert into product(id,categary,discription,price,image)values(?,?,?,?,?) ");
             pst.setString(1, P_id);
             pst.setString(2, categary);
             pst.setString(3, dis);
             pst.setString(4, price);
+            pst.setBlob(5,image);
             row = pst.executeUpdate();
             
             out.println("<font color='green'>  Record Added   </font>");

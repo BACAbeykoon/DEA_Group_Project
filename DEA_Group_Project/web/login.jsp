@@ -10,6 +10,8 @@
 </head>
 
 <body>
+     <!-- create a hidden field -->
+        <input type="hidden" id="status" value="<%=request.getAttribute("status")%>">
     <div class="main">
         <section class="sign-in">
             <div class="container">
@@ -22,7 +24,7 @@
                         <form method="POST" action="" ><br><br>
                             
                             <div class="form-group">
-                                <input type="text" name="username" placeholder="Username" required>
+                                <input type="email" name="email"  placeholder="Your Email"  required>
                             </div>
                             
                             <div class="form-group">
@@ -42,6 +44,27 @@
                 </div>
             </div>
         </section>
-    </div>  
+    </div> 
+    
+    <!-- js -->
+        
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="alert/dist/sweetalert.css">
+        
+        <script type="text/javascript">
+            var status = document.getElementById("status").value;
+            if (status == "failed"){
+                swal("Sorry","Wrong Username or Password ","error");
+            }
+            
+            else if (status == "invalidEmail"){
+                swal("Sorry","Please Enter Username ","error");
+            }
+                
+            else if (status == "invalidpassword"){
+                swal("Sorry"," Please Enter Password ","error");
+            }
+        </script>
+        
 </body>
 </html>

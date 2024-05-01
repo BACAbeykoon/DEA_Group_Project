@@ -33,28 +33,28 @@
                                 
                                 <div class="form-group">
                                    <label for="name"><i class= "zmdi zmdi-account material-icons-name"></i></label>
-                                   <input type="text" name="name"  placeholder="Your Name" />
+                                   <input type="text" name="name"  placeholder="Your Name" required="required"/>
                                 </div>
                                 
                                 
                                 <div class="form-group">
                                     <label for="email"><i class="zmdi zmdi-email"></i></label> 
-                                    <input type="email" name="email"  placeholder="Your Email" />
+                                    <input type="email" name="email"  placeholder="Your Email" required="required" />
                                 </div>
                                 
                                 <div class="form-group">
                                     <label for="pass"><i class="zmdi zmdi-lock"></i></label> 
-                                    <input type="password" name="password"  placeholder="Password" />
+                                    <input type="password" name="password"  placeholder="Password"  required="required" />
                                 </div>
                                 
                                 <div class="form-group">
                                      <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                    <input type="password" name="re_pass"  placeholder="Repeat your password" />
+                                    <input type="password" name="re_pass"  placeholder="Repeat your password" required="required" />
                                 </div>
                                 
                                 <div class="form-group">
                                     <label for="contact"><i class="zmdi zmdi-lock-outline"></i></label>
-                                    <input type="text" name="mobile"  placeholder="Contact no" />
+                                    <input type="text" name="mobile"  placeholder="Contact no" required="required" />
                                 </div>
                                 
                                 <div class="form-group">
@@ -86,6 +86,24 @@
             var status = document.getElementById("status").value;
             if (status == "success"){
                 swal("Congratulations","Account Created Successfully","success");
+            }
+            if (status == "invalidName"){
+                swal("Please Enter Name","error");
+            }
+            if (status == "invalidEmail"){
+                swal("Please Enter Email","error");
+            }
+             if (status == "invalidpassword"){
+                swal("Please Enter Password","error");
+            }
+             if (status == "invalidConfirmpassword"){
+                swal("Password do not match","error");
+            }
+             if (status == "invalidMobile"){
+                swal("Please Enter Mobile","error");
+            }
+             if (status == "invalidMobileLength"){
+                swal("Mobile Number Should be of 10 digits","error");
             }
         </script>
         

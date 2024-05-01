@@ -25,10 +25,43 @@ public class Registration extends HttpServlet {
         String name= request.getParameter("name");
         String email = request.getParameter("email");
         String password= request.getParameter("password");
+        String re_pass= request.getParameter("re_pass");
         String mobile = request.getParameter("mobile");
         
         RequestDispatcher dispatcher = null;
         Connection con = null;
+        
+         if( name==null || name.equals("")){
+            request.setAttribute("status","invalidName ");
+            dispatcher = request.getRequestDispatcher("registration.jsp");
+            dispatcher.forward(request,response);
+         }
+         if( email==null || email.equals("")){
+            request.setAttribute("status","invalidEmail ");
+            dispatcher = request.getRequestDispatcher("registration.jsp");
+            dispatcher.forward(request,response);
+         }
+          if( password==null || password.equals("")){
+            request.setAttribute("status","invalidpassword ");
+            dispatcher = request.getRequestDispatcher("registration.jsp");
+            dispatcher.forward(request,response);
+         }else if(!password.equals(re_pass)){
+            request.setAttribute("status","invalidConfirmpassword ");
+            dispatcher = request.getRequestDispatcher("registration.jsp");
+            dispatcher.forward(request,response);
+         }
+          
+          if( mobile==null || mobile.equals("")){
+            request.setAttribute("status","invalidMobile ");
+            dispatcher = request.getRequestDispatcher("registration.jsp");
+            dispatcher.forward(request,response);
+         
+          }else if(mobile.length()>10){
+            request.setAttribute("status","invalidMobileLength ");
+            dispatcher = request.getRequestDispatcher("registration.jsp");
+            dispatcher.forward(request,response);
+         }
+            
         try{
            Class.forName("com.mysql.cj.jdbc.Driver"); 
            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/authendication?useSSL=false","root"," ");

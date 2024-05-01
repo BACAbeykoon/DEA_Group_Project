@@ -22,16 +22,28 @@ public class Login extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String name = request.getParameter("username");
+        String email = request.getParameter("email");
         String password= request.getParameter("password");
         HttpSession session = request.getSession();
         RequestDispatcher dispatcher = null;
         
+        if( email==null || email.equals("")){
+            request.setAttribute("status","invalidEmail ");
+            dispatcher = request.getRequestDispatcher("login.jsp");
+            dispatcher.forward(request,response);
+            
+        }
+        if( password==null || password.equals("")){
+            request.setAttribute("status","invalidpassword ");
+            dispatcher = request.getRequestDispatcher("login.jsp");
+            dispatcher.forward(request,response);
+            
+        
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/authendication?useSSL=false","root"," ");
-            PreparedStatement pst = con.prepareStatement ("select * from user where name = ? and password = ? ");
-            pst.setString(1,name);
+            PreparedStatement pst = con.prepareStatement ("select * from user where email = ? and password = ? ");
+            pst.setString(1,email);
             pst.setString(2,password);
             
             ResultSet rs = pst.executeQuery();
@@ -53,6 +65,7 @@ public class Login extends HttpServlet {
         
     }
     }
+}
 
    
 

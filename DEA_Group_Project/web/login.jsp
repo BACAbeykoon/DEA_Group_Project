@@ -24,7 +24,7 @@
                         <form method="POST" action="" ><br><br>
                             
                             <div class="form-group">
-                                <input type="text" name="username" placeholder="Username" required>
+                                <input type="email" name="email"  placeholder="Your Email"  required>
                             </div>
                             
                             <div class="form-group">
@@ -55,6 +55,14 @@
             var status = document.getElementById("status").value;
             if (status == "failed"){
                 swal("Sorry","Wrong Username or Password ","error");
+            }
+            
+            else if (status == "invalidEmail"){
+                swal("Sorry","Please Enter Username ","error");
+            }
+                
+            else if (status == "invalidpassword"){
+                swal("Sorry"," Please Enter Password ","error");
             }
         </script>
         

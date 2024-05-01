@@ -49,6 +49,7 @@ public class  viewproduct extends HttpServlet {
             out.println("<td> Product Categary  </td>");
             out.println("<td> Product Description </td>");
             out.println("<td> Product Price </td>");
+             out.println("<td> Product Image </td>");
             out.println("<td> Edit </td>");
             out.println("<td> Delete </td>");
             
@@ -61,6 +62,7 @@ public class  viewproduct extends HttpServlet {
              out.println("<td>"  + rs.getString("categary")   +  "</td>");  
              out.println("<td>"  + rs.getString("discription")   +  "</td>");  
              out.println("<td>"  + rs.getString("price")   +  "</td>");
+             out.println("<td>"  + rs.getBlob("image")   +  "</td>");
              
              out.println("<td>"  + "<a href='edit?id=" +  rs.getString("id")  + "'> Edit </a>" + "</td>");
              out.println("<td>"  + "<a href='delete?id=" +  rs.getString("id")  + "'> Delete </a>" + "</td>");

@@ -27,7 +27,7 @@
                         <div class="signup-form">
                             <h2 class="form-title">Sign up</h2>
 
-                            <form action="RegistrationServlet " method="POST" >
+                            <form action="registration " method="POST" >
                                 
                                 <div class="form-group">
                                    <label for="name"><i class= "zmdi zmdi-account material-icons-name"></i></label>

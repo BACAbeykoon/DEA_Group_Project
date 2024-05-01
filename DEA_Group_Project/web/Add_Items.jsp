@@ -11,13 +11,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amantha</title>
-    <link rel="stylesheet" href="LoginStyle.css">
+    <link rel="stylesheet" href="AddStyle.css">
 </head>
 <body>
     <div class="container">
         <div class="Form login-form">
         <h2>Add New Products</h2>
-        <form action="Manage" method="post">
+        <form action="Manage" method="post" enctype="multipart/form-data">
             <div class="input-box">
                 <i class='bx bxs-user'></i>
                 <label for="#">Product ID</label>
@@ -28,7 +28,7 @@
                
                 <tr>
                     <td>Categary</td>
-                    <td><select name="categary" id="categary"><option>Food</option><option>Vegetable</option><option>Fruits</option></select></td>
+                    <td><select name="categary" id="categary"><option>Main Dish</option><option>Short Eats</option><option>Drinks</option><option>Desserts</option></select></td>
                     
                 </tr>
             </div>
@@ -44,6 +44,12 @@
                 <i class='bx bxs-user'></i>
                 <label for="#">Price</label>
                 <input type="text" name="price" id="price"> 
+            </div>
+            
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <label for="#">Image</label>
+                <input type="file" name="image" id="image"> 
             </div>
    
             <button class="btn">Submit</button>

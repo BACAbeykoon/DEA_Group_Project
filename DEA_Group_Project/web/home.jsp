@@ -20,7 +20,7 @@
     <section id="Home">
         <nav>
             <div class="logo">
-                <img src="image/logo.png">
+                <img src="image/logo1.jpg">
             </div>
 
             <ul>
@@ -28,7 +28,6 @@
                 <li><a href="#About">About</a></li>
                 <li><a href="#Menu">Menu</a></li>
                 <li><a href="#Gallary">Gallery</a></li>
-                <li><a href="#Review">Review</a></li>
                 <li><a href="#Order">Order</a></li>
             </ul>
 
@@ -42,25 +41,41 @@
         <div class="main">
 
             <div class="men_text">
-                <h1><span>Savor </span><br>Every Moment,<br>Delivered to <br><span1>Your Doorstep</span1></h1>
+                <h1><span><br><br>&nbsp;&nbsp;&nbsp;Savor </span><br>&nbsp;Every Moment,<br>&nbsp;&nbsp;&nbsp;Delivered to <br><span>Your Doorstep</span></h1>
             </div>
             
             <div class="main_image">
-                <img src="image/main_img.avif">
+                <img src="image/food_plate.jpg">
             </div>
         </div>
-
-        <p>
-            <br><br>
-            <b>FlavorDash</b> is like having a virtual marketplace for food on your phone. 
-            You can use it to look through different restaurants or stores, pick what you want to eat, and then order it for delivery or to pick up yourself. 
-            You can place your order, keep track of when it will arrive, and pay for it all through the app.
+    </section>
+    <p>
+    <h3><center><h2 style="color: burlywood">FlavorDash</h2> It is like having a virtual marketplace for food on your phone.<br>
+            You can use it to look through different restaurants or stores, pick what you want to eat,and then order it for delivery or to pick up yourself. <br>
+        You can place your order,keep track of when it will arrive, and pay for it all through the app.</center></h3>
         </p>
 
-        <div class="main_btn">
-            <a href="#">Order Now</a>
-            <i class="fa-solid fa-angle-right"></i>
+    <!--About-->
+
+    <div class="about" id="About">
+        <div class="about_main">
+
+            <div class="image">
+                <img src="image/pizza1.jpg">
+            </div>
+
+            <div class="about_text">
+                <h1><span>&nbsp;About</span>Us</h1>
+                <h3>&nbsp;&nbsp;Why Choose us?</h3>
+                <p>&nbsp;
+                    We are <b>FlavorDash</b>, offers a convenient way for users to browse menus, place orders, &nbsp;and have food delivered to their doorstep. 
+                    The service aims to provide a wide range of food &nbsp;options, quick delivery times, and a user-friendly experience. 
+                    FlavorDash partners with &nbsp;local restaurants to offer a diverse selection of cuisines, catering to different tastes and &nbsp;preferences. 
+                    Overall, we seeks to make the food ordering and delivery process seamless &nbsp;and enjoyable for customers.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+
 </body>
 </html>

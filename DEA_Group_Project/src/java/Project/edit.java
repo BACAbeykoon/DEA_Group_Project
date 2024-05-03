@@ -46,7 +46,7 @@ public class edit extends HttpServlet {
                 out.print("<table");
                
                 out.print("<tr> <td>Product ID</td>    <td> <input type='text' name ='P_id' id='P_id' value= '" + rs.getString("id") + "'/> </td> </tr><br><br>");
-                out.print("<tr> <td>Categary</td>    <td> <select  name ='categary' id='categary'> <option>Food</option><option>Vegetable</option><option>Fruits</option></select> </td> </tr><br><br>");
+                out.print("<tr> <td>Categary</td>    <td> <select  name ='categary' id='categary'> <option>Main Dish</option><option>Short Eats</option><option>Drinks</option><option>Desserts</option></select> </td> </tr><br><br>");
                 out.print("<tr> <td>Discription</td>    <td> <input type='text' name ='discription' id='discription' value= '" + rs.getString("discription") + "'/> </td> </tr><br><br>");
                 out.print("<tr> <td>Price</td>    <td> <input type='text' name ='price' id='price' value= '" + rs.getString("price") + "'/> </td> </tr><br><br>");
                 out.print("<tr>  <td colspan ='2'> <input type='submit'  value= 'Edit'/> </td> </tr>");

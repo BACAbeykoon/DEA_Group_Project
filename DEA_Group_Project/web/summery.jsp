@@ -15,9 +15,9 @@
 </head>
 <body>
   <div class="card">
-      <div class="row mt-4">
+      <div>
           
-          <div class="col-md-5">
+          <div>
       <div class="card-body">
          <h2 style="color:red;">Order Summary</h2>
          <div class="image">
@@ -44,11 +44,14 @@
     <p>Subtotal: $<%= request.getAttribute("subtotal") %></p>
     <p>Tax: $<%= request.getAttribute("tax") %></p>
     <p>Shipping Cost: $<%= request.getAttribute("shippingCost") %></p>
+    <hr>
     <p style="font-size:25px">Total: $<%= request.getAttribute("totalAmount") %></p>
             </div>
     
-            <div class="card button">
-        <button type="submit">Place Order</button>
+        <div class="card button">
+            <form action="placeOrderServlet" method="post">
+                <button type="submit">Place Order</button>
+            </form>
             </div>
       </div>
           </div>

@@ -24,16 +24,16 @@
             </div>
 
             <ul>
-                <li><a href="#Home">Home</a></li>
+                <li><a href="home.jsp">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Menu">Menu</a></li>
                 <li><a href="#Gallary">Gallery</a></li>
-                <li><a href="#Order">Order</a></li>
+                <li><a href="login.jsp">Users</a></li>
             </ul>
 
             <div class="icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-heart"></i>
+                <i><a href="Admin.jsp" class="fas fa-user"></a></i>
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </nav>

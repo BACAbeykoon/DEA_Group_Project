@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    
+     <%@include file="header.jsp"%>
      <!-- create a hidden field -->
         <input type="hidden" id="status" value="<%=request.getAttribute("status")%>">
     <div class="main">

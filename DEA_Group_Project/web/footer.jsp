@@ -32,7 +32,7 @@
             <div class="footer_tag">
                 <h2>Quick Link</h2>
                 <ul>
-                    <a href="#Home">Home</a><br><br>
+                    <a href="home.jsp">Home</a><br><br>
                     <a href="#About">About</a><br><br>
                     <a href="#Menu">Menu</a><br><br>
                     <a href="#Gallary">Gallery</a><br><br>

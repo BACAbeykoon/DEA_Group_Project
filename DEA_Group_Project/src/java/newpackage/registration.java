@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name = "Login", urlPatterns = {"/Login"})
-public class Login extends HttpServlet {
+@WebServlet(name = "registration", urlPatterns = {"/registration"})
+public class registration extends HttpServlet {
 
     
     @Override
@@ -20,6 +20,5 @@ public class Login extends HttpServlet {
         
     }
 
-    
 
 }

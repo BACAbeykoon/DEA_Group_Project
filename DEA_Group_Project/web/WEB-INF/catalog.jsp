@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        
         <style>
 body {background-color: powderblue;}
 h1   {color: darkslateblue;}

@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+         <%@include file="header.jsp"%>
         <!-- create a hidden field -->
         <input type="hidden" id="status" value="<%=request.getAttribute("status")%>">
 

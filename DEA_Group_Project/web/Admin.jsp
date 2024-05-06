@@ -64,6 +64,7 @@
     
 </head>
 <body>
+    <%@include file="header.jsp"%>
     <div class="container">
         <div class="login-box">
             <h2>Login</h2>

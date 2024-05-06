@@ -18,11 +18,7 @@
     </head>
     <body>
         
-        <!-- create a hidden field -->
-        <input type="hidden" id="status" value="<%=request.getAttribute("status")%>">
-
-        
-        <div class="main">
+         <div class="main">
             <section class="signup">
                 <div class="container">
                     <div class="signup-content">
@@ -76,36 +72,5 @@
                     </div>
                 </section>
                </div>
-        
-         <!-- js -->
-        
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<link rel="stylesheet" href="alert/dist/sweetalert.css">
-        
-        <script type="text/javascript">
-            var status = document.getElementById("status").value;
-            if (status == "success"){
-                swal("Congratulations","Account Created Successfully","success");
-            }
-            if (status == "invalidName"){
-                swal("Please Enter Name","error");
-            }
-            if (status == "invalidEmail"){
-                swal("Please Enter Email","error");
-            }
-             if (status == "invalidpassword"){
-                swal("Please Enter Password","error");
-            }
-             if (status == "invalidConfirmpassword"){
-                swal("Password do not match","error");
-            }
-             if (status == "invalidMobile"){
-                swal("Please Enter Mobile","error");
-            }
-             if (status == "invalidMobileLength"){
-                swal("Mobile Number Should be of 10 digits","error");
-            }
-        </script>
-        
-            </body>
+         </body>
             </html>

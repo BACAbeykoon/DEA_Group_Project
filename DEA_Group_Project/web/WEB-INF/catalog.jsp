@@ -1,8 +1,4 @@
-<%-- 
-    Document   : catalog
-    Created on : May 4, 2024, 10:08:29 PM
-    Author     : MSI
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

@@ -43,7 +43,7 @@ public class  viewproduct extends HttpServlet {
             Statement stmt = con.createStatement();
             rs = stmt.executeQuery(sql);
             
-            out.println("<table cellspacing='0' width='350px' border='1'>");
+            out.println("<table cellspacing='0' width='350px' border='1' style='margin: auto; width: 75%; border: 2px solid #333; padding: 20px; border-radius: 10px;'>");
             out.println("<tr>");
             out.println("<td> Product Id </td>");
             out.println("<td> Product Categary  </td>");
@@ -54,7 +54,7 @@ public class  viewproduct extends HttpServlet {
             out.println("<td> Delete </td>");
             
             out.println("</tr>");
-            
+           
             while(rs.next())
             {
              out.println("<tr>");
@@ -69,7 +69,7 @@ public class  viewproduct extends HttpServlet {
              out.println("</tr>");
 
             }
-            
+             out.println("<tr style='text-align: center;>  <td colspan='7' ><a href='Add_Items.jsp'> Back </a></td> </tr>");
             out.println("</table>");
  
             

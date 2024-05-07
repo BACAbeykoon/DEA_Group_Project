@@ -42,16 +42,19 @@ public class edit extends HttpServlet {
            
            while(rs.next())
            {
-               out.print("<form action='EditServlet' method='POST'");
+               out.print("<form action='EditServlet' method='POST'  style='margin: auto; width: 50%; border: 2px solid #333; padding: 20px; border-radius: 10px;'>");
                 out.print("<table");
                
                 out.print("<tr> <td>Product ID</td>    <td> <input type='text' name ='P_id' id='P_id' value= '" + rs.getString("id") + "'/> </td> </tr><br><br>");
                 out.print("<tr> <td>Categary</td>    <td> <select  name ='categary' id='categary'> <option>Main Dish</option><option>Short Eats</option><option>Drinks</option><option>Desserts</option></select> </td> </tr><br><br>");
                 out.print("<tr> <td>Discription</td>    <td> <input type='text' name ='discription' id='discription' value= '" + rs.getString("discription") + "'/> </td> </tr><br><br>");
                 out.print("<tr> <td>Price</td>    <td> <input type='text' name ='price' id='price' value= '" + rs.getString("price") + "'/> </td> </tr><br><br>");
-                out.print("<tr>  <td colspan ='2'> <input type='submit'  value= 'Edit'/> </td> </tr>");
+                out.print("<tr>  <td colspan='2' > <input type='submit'  value= 'Edit'/> </td> </tr>");
+                 out.println("<tr>  <td colspan='2' ><a href='viewproduct'> Back </a></td> </tr>");
                 out.print("</table");
                 out.print("</form");
+                
+               
                
            }
             

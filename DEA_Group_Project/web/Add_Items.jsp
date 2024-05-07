@@ -30,7 +30,7 @@ body{
     
 }
 .container{
-    height: 650px;
+    height: 700px;
     width: 410px;
     background: #eee;
     border-radius: 15px;
@@ -156,12 +156,12 @@ p{
     color: rgba(0,0,0,.5);
     font-size: 13px;
     font-weight: 500;
-    margin: 25px 0;
+    margin: 15px 0;
 }
 
 .RegisteBtn a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
 }
 
         
@@ -212,6 +212,9 @@ p{
         </form>
       
         <p class="RegisteBtn RegiBtn"> <a href="viewproduct">View All Product List</a></p>
+        <p class="RegisteBtn RegiBtn"> <a href="Interface.jsp">Back</a></p>
+        
+      
     </div>
   
 

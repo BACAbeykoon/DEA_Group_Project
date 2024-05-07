@@ -6,6 +6,11 @@
     <title>Login Form</title>
     <style>
  body {
+     
+    background-image: url('images/AdminB.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -67,7 +72,7 @@
     <%@include file="header.jsp"%>
     <div class="container">
         <div class="login-box">
-            <h2>Login</h2>
+            <h2>Admin Login</h2>
             <form action="LoginServlet" method="post">
                 <div class="textbox">
                     <input type="text" placeholder="Username" name="username" required>

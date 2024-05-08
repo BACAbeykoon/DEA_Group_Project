@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('images/go.jpg'); /* Replace 'background.jpg' with the path to your background image */
+            background-image: url('images/go.jpg'); 
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;

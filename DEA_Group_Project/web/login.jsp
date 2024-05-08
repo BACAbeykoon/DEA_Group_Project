@@ -12,7 +12,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-color: #f0f0f0;
-            margin: 0;
+            margin: 5;
             padding: 0;
         }
         h2 {
@@ -86,8 +86,10 @@
 </head>
  
 <body>
-    <h2>Login</h2>
+   
     <form action="LoginServletU" method="post" onsubmit="return validateForm()">
+         <h2>Login</h2>
+         <br>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
         

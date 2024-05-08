@@ -12,6 +12,10 @@
         <title>INTERFACE</title>
             <style>
         body {
+            background-image: url('images/Orders.jpg'); /* Replace 'background.jpg' with the path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;

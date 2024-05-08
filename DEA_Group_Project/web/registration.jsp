@@ -4,21 +4,24 @@
     Author     : User
 --%>
 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
+    <%--CSS--%>
     <style>
-       body {
-            font-family: Arial, sans-serif;
-            background-image: url('images/go.jpg'); /* Replace 'background.jpg' with the path to your background image */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #f0f0f0;
-            margin: 5;
-            padding: 0;
-        }
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/free.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
 
 h2 {
     text-align: center;
@@ -29,7 +32,7 @@ form {
     width: 300px;
     margin: 0 auto;
     background-color: #fff;
-    padding: 25px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -77,29 +80,59 @@ p {
         }
         
     </style>
+    <script>
+    function showError(message) {
+        alert('Alert: ' + message);
+    }
+    </script>
 </head>
 <body>
-   
-    <form action="RegisterM" method="post">
-         <h2>Registration Form</h2>
-         <br>
+    <h2>Registration Form</h2>
+    <form action="RegisterM" method="post" onsubmit="return validateForm()">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
         
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required><br><br>
         
+        <label for="re-password">Confirm Password:</label>
+        <input type="password" id="re-password" name="re-password" required><br><br>
+        
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="no">Phone No:</label>
+
+        <label for="no">Mobile Number:</label>
         <input type="text" id="no" name="no" required><br><br>
-        
+
         
         <input type="submit" value="Register">
-         <p> <a href="login.jsp">Login</a></p>
+        <p> <a href="login.jsp">Login</a></p>
+        
+        
     </form>
+    
+  <%--Data Validation --%> 
+    
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var rePassword = document.getElementById("re-password").value;
+            var no = document.getElementById("no").value;
+            
+            if (password !== rePassword) {
+                showError("Passwords do not match.");
+                return false;
+            }
+            
+            if (no.length !== 10) {
+                showError("Mobile number must be 10 characters long.");
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
+    
     <p > <a href="ViewUsers">View All Product List</a></p>
 </body>
 </html>
-

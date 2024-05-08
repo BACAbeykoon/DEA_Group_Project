@@ -4,23 +4,21 @@
     Author     : User
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
     <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-image: url('images/free.jpg'); /* Replace 'background.jpg' with the path to your background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-}
+       body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/go.jpg'); /* Replace 'background.jpg' with the path to your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #f0f0f0;
+            margin: 5;
+            padding: 0;
+        }
 
 h2 {
     text-align: center;
@@ -31,7 +29,7 @@ form {
     width: 300px;
     margin: 0 auto;
     background-color: #fff;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -81,26 +79,27 @@ p {
     </style>
 </head>
 <body>
-    <h2>Registration Form</h2>
-    <form action="registration" method="post">
+   
+    <form action="RegisterM" method="post">
+         <h2>Registration Form</h2>
+         <br>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
         
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required><br><br>
         
-        <label for="re-password">Confirm Password:</label>
-        <input type="password" id="re-password" name="re-password" required><br><br>
-        
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
-
-        <label for="mobile">Mobile Number:</label>
-        <input type="text" id="mobile" name="mobile" required><br><br>
-
+        
+        <label for="no">Phone No:</label>
+        <input type="text" id="no" name="no" required><br><br>
+        
         
         <input type="submit" value="Register">
-        <p> <a href="login.jsp">Login</a></p>
+         <p> <a href="login.jsp">Login</a></p>
     </form>
+    <p > <a href="ViewUsers">View All Product List</a></p>
 </body>
 </html>
+

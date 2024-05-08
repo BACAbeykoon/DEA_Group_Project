@@ -10,11 +10,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
-    <%--CSS--%>
     <style>
         body {
     font-family: Arial, sans-serif;
-    background-image: url('images/free.jpg'); 
+    background-image: url('images/free.jpg'); /* Replace 'background.jpg' with the path to your background image */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -80,15 +79,10 @@ p {
         }
         
     </style>
-    <script>
-    function showError(message) {
-        alert('Alert: ' + message);
-    }
-    </script>
 </head>
 <body>
     <h2>Registration Form</h2>
-    <form action="registration" method="post" onsubmit="return validateForm()">
+    <form action="registration" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
         
@@ -101,36 +95,12 @@ p {
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
 
-        <label for="no">Mobile Number:</label>
-        <input type="text" id="no" name="no" required><br><br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" required><br><br>
 
         
         <input type="submit" value="Register">
         <p> <a href="login.jsp">Login</a></p>
-        
-        
     </form>
-    
-  <%--Data Validation --%> 
-    
-    <script>
-        function validateForm() {
-            var password = document.getElementById("password").value;
-            var rePassword = document.getElementById("re-password").value;
-            var no = document.getElementById("no").value;
-            
-            if (password !== rePassword) {
-                showError("Passwords do not match.");
-                return false;
-            }
-            
-            if (no.length !== 10) {
-                showError("Mobile number must be 10 characters long.");
-                return false;
-            }
-            
-            return true;
-        }
-    </script>
 </body>
 </html>

@@ -364,7 +364,7 @@
                     <a href="#About">About</a><br><br>
                     <a href="#Menu">Menu</a><br><br>
                     <a href="#Gallary">Gallery</a><br><br>
-                    <a href="#Order">Order</a>
+                    <a href="Admin.jsp">Admin</a>
                 </ul>
             </div>
 

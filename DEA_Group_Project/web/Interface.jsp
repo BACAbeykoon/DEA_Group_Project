@@ -101,7 +101,7 @@
         </div>
 
         <div class="card">
-            <a href="ManageUsers.jsp">
+            <a href="ViewUsers">
                 <div class="card-body text-center">
                     <i class="fas fa-shopping-cart"></i>
                     <h4>MANAGE USER</h4>

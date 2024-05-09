@@ -40,7 +40,7 @@ public class LoginServletU extends HttpServlet {
 
             if (result.next()) {
                 // Login successful
-                response.sendRedirect("welcome.jsp");
+                response.sendRedirect("home.jsp");
             } else {
                 // Login failed
                 response.sendRedirect("registrationError.jsp");

@@ -41,7 +41,7 @@ public class ViewUsers extends HttpServlet {
             Statement stmt = con.createStatement();
             rs = stmt.executeQuery(sql);
             
-            out.println("<table cellspacing='0' width='350px' border='1'>");
+            out.println("<table cellspacing='0' width='350px' border='1' style='margin: auto; width: 75%; border: 2px solid #333; padding: 20px; border-radius: 10px;'>");
             out.println("<tr>");
             out.println("<td>Username</td>");
             out.println("<td>Password</td>");
@@ -65,7 +65,7 @@ public class ViewUsers extends HttpServlet {
              out.println("</tr>");
 
             }
-            
+             out.println("<tr style='text-align: center;>  <td colspan='7' ><a href='Interface.jsp'> Back </a></td> </tr>");
             out.println("</table>");
  
             

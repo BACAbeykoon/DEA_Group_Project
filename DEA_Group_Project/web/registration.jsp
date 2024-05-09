@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #f7f7f7;
-    margin: 0;
+    margin: 5;
     padding: 0;
 }
 
@@ -87,8 +87,10 @@ p {
     </script>
 </head>
 <body>
-    <h2>Registration Form</h2>
+    
     <form action="RegisterM" method="post" onsubmit="return validateForm()">
+        <h2>Registration Form</h2>
+        <br>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
         
@@ -133,6 +135,6 @@ p {
         }
     </script>
     
-    <p > <a href="ViewUsers">View All Product List</a></p>
+    
 </body>
 </html>

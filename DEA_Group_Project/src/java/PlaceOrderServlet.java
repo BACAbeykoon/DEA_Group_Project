@@ -33,6 +33,11 @@ public class PlaceOrderServlet extends HttpServlet {
     }
 
     private double calculateSubtotal(List<Product> selectedProducts) {
+        // Check if selectedProducts is null
+        if (selectedProducts == null) {
+            return 0.0; // or handle it according to your application's logic
+        }
+        
         // Calculate subtotal based on selected products
         double subtotal = 0.0;
         for (Product product : selectedProducts) {
@@ -61,22 +66,22 @@ public class PlaceOrderServlet extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
 
             // Open a connection
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database", "your_username", "your_password");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name_here", "root", "");
 
             // Insert order details into the database
-            String sql = "INSERT INTO order_details (product_id, product_name, quantity, price, subtotal, tax, shipping_cost, total_amount) VALUES (?, ?,?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO order_details (product_id, product_name, quantity, price, subtotal, tax, shipping_cost, total_amount) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             pstmt = conn.prepareStatement(sql);
             for (Product product : selectedProducts) {
                 pstmt.setInt(1, product.getId());
                 pstmt.setString(2, product.getName());
                 pstmt.setInt(3, product.getQuantity());
                 pstmt.setDouble(4, product.getPrice());
-                pstmt.setDouble(5, subtotal);
-                pstmt.setDouble(6, tax);
-                pstmt.setDouble(7, shippingCost);
-                pstmt.setDouble(8, totalAmount);
-                pstmt.executeUpdate();
             }
+            pstmt.setDouble(5, subtotal);
+            pstmt.setDouble(6, tax);
+            pstmt.setDouble(7, shippingCost);
+            pstmt.setDouble(8, totalAmount);
+            pstmt.executeUpdate();
         } catch (SQLException | ClassNotFoundException e) {
             // Log or handle exceptions
             
@@ -92,4 +97,3 @@ public class PlaceOrderServlet extends HttpServlet {
         }
     }
 }
-

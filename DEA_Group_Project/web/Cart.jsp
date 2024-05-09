@@ -9,99 +9,68 @@ Created on : Apr 25, 2024, 1:27:22 PM
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Bite- Fast Food | By Code Info</title>
-    <link rel="stylesheet" href="cart.css"/>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="script.js" defer></script>
 </head>
-<body class="">
-     <div class="banner">
-         <img src="image/21.png" width="259" height="194" alt="Food Delivery Template"/>
-
-    </div>
-    <div class="container">
-        <header class="header">
-            <nav class="header--menu">
-                 
-               
-                <i class="fa-solid fa-menu"></i>
-            </div>           
-                 <div class="cart--icon">
-               
-                <i class="fa-solid fa-cart-shopping"></i>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Your Logo">
             </div>
-                <div class="burger--icon">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="search--box">
-                    <i class="fa-solid  fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search"/>
-                </div>
-               
-                </div> 
-           
-                
-               
+            <nav>
+                <ul>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="products.jsp">Products</a></li>
+                    <li class="active"><a href="cart.jsp">Cart</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
             </nav>
-        </header>
-        <!-- cover section -->
-        <section class="cover">
-            <div class="cover--overlay">
-              
+        </div>
+    </header>
 
-                <h1>Quick Bite</h1>
-                    <span class="slogan">Where Taste Takes the Fast Lane</span>
-                    
-                 
-                
+    <main>
+        <section class="cart-items">
+            <div class="container">
+                <h2>Shopping Cart</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populate with cart items dynamically -->
+                        <tr>
+                            <td>Product Name</td>
+                            <td><input type="number" value="2"></td>
+                            <td>$20.00</td>
+                            <td>
+                                <button class="update">Update</button>
+                                <button class="remove">Remove</button>
+                            </td>
+                        </tr>
+                        <!-- Repeat for each item in the cart -->
+                    </tbody>
+                </table>
+                <div class="total">
+                    <p>Total: $40.00</p>
+                </div>
+                <button class="proceed-to-checkout">Proceed to Checkout</button>
             </div>
         </section>
-        <main>
-            <h2 class="section-heading">Food Menu</h2>
-            <div class="menu--list">
-                <div class="menu--item">
-                    <img src="Image1/6.PNG" width="369" height="364" alt="6"/>
+    </main>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
 
-
-                    <h3>Pizza</h3>
-                </div><div class="menu--item">
-                    <img src="Image1/16.jpg" width="600" height="400" alt="16"/>
-
-
-
-                    <h3>Buger</h3>
-                </div><div class="menu--item">
-                    <img src="Image1/15.jpg" width="600" height="600" alt="15"/>
-
-
-
-                    <h3>Biriyani</h3>
-                </div>
-                <div class="menu--item">
-                    <img src="Image1/tt1.PNG" width="414" height="414" alt="tt1"/>
-
-
-
-                    <h3>Salad</h3>
-                </div>
-                <div class="menu--item">
-                    <img src="Image1/12.jpg" width="800" height="851" alt="12"/>
-
-
-                    
-                    <h3>French Fries</h3>
-                </div>
-                <div class="menu--item">
-                    <img src="Image1/11.jpg" width="750" height="1000" alt="11"/>
-
-
-                    
-
-                    <h3>Bubble Tea</h3>
-                </div>
-            </div>
-           
-        </main>
-        <a href="script.js"></a>
-    </body>
-    </html>
-            
+    <script src="script.js"></script>
+</body>
+</html>

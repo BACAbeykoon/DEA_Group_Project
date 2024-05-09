@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/placeOrderServlet")
+@WebServlet("/PlaceOrderServlet")
 public class PlaceOrderServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -66,7 +66,7 @@ public class PlaceOrderServlet extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
 
             // Open a connection
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name_here", "root", "");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/checkout page?zeroDateTimeBehavior=CONVERT_TO_NULL", "root", "null");
 
             // Insert order details into the database
             String sql = "INSERT INTO order_details (product_id, product_name, quantity, price, subtotal, tax, shipping_cost, total_amount) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";

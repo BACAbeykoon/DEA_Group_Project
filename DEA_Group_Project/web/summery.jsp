@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="card-body">
-    <form style="text-align: center" action="placeOrderServlet" method="get">
+    <form style="text-align: center" action="PlaceOrderServlet" method="post">
         <div class="card">
       
           
@@ -52,7 +52,7 @@
             </div>
     </form>
         <div class="card button">
-            <form action="placeOrderServlet" method="post">
+            <form action="PlaceOrderServlet" method="post">
                 <button type="submit">Place Order</button>
             </form>
             </div>

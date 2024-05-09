@@ -44,8 +44,12 @@
                 <p>Total Amount: ${totalAmount}</p>
             </div>
             <form action="PlaceOrderServlet" method="post">
-                <button type="submit">Place Order</button>
-            </form>
+    <input type="hidden" name="productId" value="1"> <!-- Example product ID -->
+    <input type="text" name="quantity">
+    <!-- Add more input fields as needed -->
+    <button type="submit">Place Order</button>
+</form>
+
         </div>
     </div>
 </body>

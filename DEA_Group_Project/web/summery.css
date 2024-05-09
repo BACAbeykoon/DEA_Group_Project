@@ -3,51 +3,58 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
 */
 /* 
-    Created on : Apr 29, 2024, 2:11:23 PM
+    Created on : May 9, 2024, 6:46:54 PM
     Author     : Nipu
 */
+
 .card {
-  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.3);
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  background-color:white;
-  
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 18px;
 }
 
-.price {
-  color: grey;
-  font-size: 22px;
+.image img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
-.card button {
-  border: none;
-  outline: 0;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
 }
 
-.card button:hover {
-  opacity: 0.5;
-}
-
-.summer {
-    font-size: 20px;
+th, td {
+    border: 1px solid #dddddd;
     text-align: left;
+    padding: 8px;
 }
+
 .order {
     text-align: left;
 }
 
-body {
-    background-color: lightblue;
+button {
+    background-color: blue;
+    color: white;
+    padding: 12px 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    font-size: 16px;
 }
-.food {
-    text-align: center;
+
+button:hover {
+    opacity: 0.7;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
 }
